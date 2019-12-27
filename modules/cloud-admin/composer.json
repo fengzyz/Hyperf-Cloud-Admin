@@ -42,7 +42,6 @@
         "aliyuncs/oss-sdk-php": "^2.3",
         "hyperf/crontab": "^1.1",
         "hyperf/config-apollo": "^1.1",
-        "hyperf/nats": "^1.1",
         "hyperf/retry": "^1.1"
     },
     "require-dev": {

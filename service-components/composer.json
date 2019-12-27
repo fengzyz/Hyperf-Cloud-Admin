@@ -1,0 +1,20 @@
+{
+    "name": "fengzyz/components",
+    "description": "service components",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fengzyz",
+            "email": "479235966@qq.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "ServiceComponents\\":"src"
+        }
+
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
