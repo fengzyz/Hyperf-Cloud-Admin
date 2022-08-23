@@ -1,147 +1,36 @@
-# 介绍
+# Introduction
 
-Hyperf 是基于 `Swoole 4.4+` 实现的高性能、高灵活性的 PHP 持久化框架
+This is a skeleton application using the Hyperf framework. This application is meant to be used as a starting place for those looking to get their feet wet with Hyperf Framework.
 
+# Requirements
 
-## 简单搭建登录注册身份验证
-- 接口使用JWT身份验证
-- 注册增加事件、事件监听器 注册成功发送邮件  邮件用异步队列延迟发送
-- 所有接口请求及相应结果记录日志  日志用队列异步写入
+Hyperf has some requirements for the system environment, it can only run under Linux and Mac environment, but due to the development of Docker virtualization technology, Docker for Windows can also be used as the running environment under Windows.
 
-## 安装说明
-项目内已经准备好了各种版本的 Dockerfile ，或直接基于已经构建好的 hyperf\hyperf 镜像来运行。
-如果不想采用 Docker 来作为运行的环境基础时，需要确保您的运行环境达到了以下的要求：
-- PHP >= 7.2
-- Swoole PHP 扩展 >= 4.4，并关闭了 Short Name
-- OpenSSL PHP 扩展
-- JSON PHP 扩展
-- PDO PHP 扩展 （如需要使用到 MySQL 客户端）
-- Redis PHP 扩展 （如需要使用到 Redis 客户端）
-- Protobuf PHP 扩展 （如需要使用到 gRPC 服务端或客户端）
+The various versions of Dockerfile have been prepared for you in the [hyperf/hyperf-docker](https://github.com/hyperf/hyperf-docker) project, or directly based on the already built [hyperf/hyperf](https://hub.docker.com/r/hyperf/hyperf) Image to run.
 
-```
-# 确保环境下安装composer的情况下,进入到项目目录下执行如下命令
-cd hyperf-api-demo
+When you don't want to use Docker as the basis for your running environment, you need to make sure that your operating environment meets the following requirements:  
 
-# 执行composer
-composer update
+ - PHP >= 7.3
+ - Swoole PHP extension >= 4.5，and Disabled `Short Name`
+ - OpenSSL PHP extension
+ - JSON PHP extension
+ - PDO PHP extension （If you need to use MySQL Client）
+ - Redis PHP extension （If you need to use Redis Client）
+ - Protobuf PHP extension （If you need to use gRPC Server of Client）
 
-# 迁移数据，创建demo_db,在.env文件里配置自己的数据库、redis等信息
+# Installation using Composer
 
-php bin/hyperf.php migrate
+The easiest way to create a new Hyperf project is to use Composer. If you don't have it already installed, then please install as per the documentation.
 
-# 启动 Hyperf
-php bin/hyperf.php start
+To create your new Hyperf project:
 
-```
+$ composer create-project hyperf/hyperf-skeleton path/to/install
 
-## 如果需要使用Nginx 则需要配置 Http 反向代理
-```
- # 至少需要一个 Hyperf 节点，多个配置多行
- upstream hyperf {
-     # Hyperf HTTP Server 的 IP 及 端口
-     server 127.0.0.1:9501;
-     server 127.0.0.1:9502;
- }
- server {
-     # 监听端口
-     listen 80; 
-     # 绑定的域名，填写您的域名
-     server_name proxy.hyperf.io;
- 
-     location / {
-         # 将客户端的 Host 和 IP 信息一并转发到对应节点  
-         proxy_set_header Host $http_host;
-         proxy_set_header X-Real-IP $remote_addr;
-         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
- 
-         # 转发Cookie，设置 SameSite
-         proxy_cookie_path / "/; secure; HttpOnly; SameSite=strict";
- 
-         # 执行代理访问真实服务器
-         proxy_pass http://hyperf;
-     }
- }
-```
-## 接口使用说明
-URL地址根据自己的机器配置
+Once installed, you can run the server immediately using the command below.
 
-## 1. 授权
-### 1.1 功能描述
-获取token
-### 1.2 请求说明
-> 请求方式：POST<br>
-请求URL ：[http://192.168.33.10:9501/api-auth/login](#)
+$ cd path/to/install
+$ php bin/hyperf.php start
 
-### 1.3 请求参数
-字段       |字段类型       |字段说明
-------------|-----------|-----------
-app_id       |string        |APP ID
-app_secret       |string        |密钥
-### 1.4 返回结果
-```json  
-{
-    "code": 200,
-    "message": "请求成功",
-    "data": {
-        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxNTgyODkxODY2LCJuYmYiOjE1ODI4OTE4NjYsImV4cCI6MTU4Mjg5MTg2NiwiZGF0YSI6eyJhcHBfaWQiOiJmZW5nenl6IiwiYXBwX3NlY3JldCI6IjEyMzQ1NiJ9fQ.1QVFco9GgQjsiFoweFd-OLG-NfTJsUJynItEWY2Pt_s"
-    }
-}
-``` 
+This will start the cli-server on port `9501`, and bind it to all network interfaces. You can then visit the site at `http://localhost:9501/`
 
-## 1. 注册
-### 1.1 功能描述
-注册用户
-### 1.2 请求说明
-> 请求方式：POST<br> 
->设置--header 'Authorization: Bearer token值
-    --header 'X-Real-IP: 127.0.0.1' 
-请求URL ：[http://192.168.33.10:9501/api/user-register](#)
-
-### 1.3 请求参数
-字段       |字段类型       |字段说明
-------------|-----------|-----------
-username       |string        |用户名
-password       |string        |密码
-password_confirmation       |string        |确认密码
-nickname       |string        |昵称
-gender       |string        |性别
-email       |string        |Email
-birthday       |string        |出生年月
-mobile       |string        |手机号
-### 1.4 返回结果
-```json  
-{
-    "code": 200,
-    "message": "请求成功",
-    "data": {
-        "uid": "91991443974942721"
-    }
-}
-``` 
-
-## 1. 登录
-### 1.1 功能描述
-用户登录
-### 1.2 请求说明
-> 请求方式：POST<br>
-请求URL ：[http://192.168.33.10:9501/api/user-login](#)
-
-### 1.3 请求参数
-字段       |字段类型       |字段说明
-------------|-----------|-----------
-username       |string        |用户名
-password       |string        |密码
-### 1.4 返回结果
-```json  
-{
-    "code": 200,
-    "message": "请求成功",
-    "data": {
-        "uid": "91847868079415297"
-    }
-}
-``` 
-
-
-
+which will bring up Hyperf default home page.

@@ -1,10 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="789103fd-1c20-4fdf-8b85-3f1d47b71482" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Hyperf-Cloud-Admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Hyperf-Cloud-Admin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/auth-api/.github/workflows/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/auth-api/.github/workflows/build.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/auth-api/.github/workflows/release.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/auth-api/.php-cs-fixer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/auth-api/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/.php_cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/.phpstorm.meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Constants/ErrorCode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Constants/StatusCode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Controller/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/app/Controller/AbstractController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Controller/ApiAuth/AuthController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/app/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Controller/User/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Event/UserRegistered.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Exception/BusinessException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Exception/Handler/AppExceptionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/app/Exception/Handler/AppExceptionHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Exception/Handler/BusinessExceptionHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Exception/NotFoundException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Exception/ParamaterException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Job/EmailJob.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Job/LogRecordJob.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Kernel/Functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Kernel/ResponseCreater.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Kernel/ResponseJson.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Lib/JsonWebToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Listener/DbQueryExecutedListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/app/Listener/DbQueryExecutedListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Listener/QueueHandleListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Listener/UserRegisteredListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Middleware/Auth/AuthMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Middleware/CorsMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Model/ApiAuthClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Model/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/app/Model/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/app/Model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Process/AsyncQueueConsumer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Request/AbstractFormRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Request/ApiAuthLoginRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Request/StaffsCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Request/UserLoginRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Request/UserRegisterRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Request/UserUpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Service/ApiAuthClientService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Service/QueueService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/app/Service/UserService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/bin/hyperf.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/bin/hyperf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/amqp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/annotations.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/annotations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/aspects.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/aspects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/async_queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/commands.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/commands.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/databases.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/databases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/dependencies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/devtool.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/devtool.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/email.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/exceptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/exceptions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/jwt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/listeners.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/listeners.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/logger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/middlewares.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/middlewares.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/opentracing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/processes.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/processes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/redis.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/autoload/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/translation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/autoload/whitelist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/container.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/container.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/deploy.test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/deploy.test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/migrations/2020_02_28_144242_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/migrations/2020_02_28_144319_create_api_auth_client_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/phpstan.neon" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/phpstan.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/storage/languages/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/storage/languages/zh_CN/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/test/Cases/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/test/Cases/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/test/Cases/UserTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/test/HttpTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/test/HttpTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth-api/test/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth-api/test/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/.php_cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/.phpstorm.meta.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Annotation/SysLogAnnotation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Aspect/SysLogAspect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Constants/Constants.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Constants/ErrorCode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/AbstractController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/Admin/SysConfigController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/Admin/SysLogController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/Admin/SysMenuController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/Admin/SysOssController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/Admin/SysRoleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/Admin/SysUserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Controller/IndexController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Exception/BusinessException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Exception/Handler/AppExceptionHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Kernel/Functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Kernel/Http/Response.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Kernel/Log/Log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Listener/DbQueryExecutedListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Listener/FetchModeListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Listener/QueueHandleListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Middleware/AdminMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Middleware/CorsMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Middleware/DebugMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/Dao/SysConfigDao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/Dao/SysLogDao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/Dao/SysRoleDao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/Dao/SysUserDao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/Model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysConfig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysLog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysMenu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysOss.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysRole.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysRoleMenu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Model/SysUserRole.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Process/AsyncQueueConsumer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/CommonService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/Formatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/SysConfigFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/SysLogFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/SysMenuFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/SysOssFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/SysRoleFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/SysRoleMenuFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Formatter/SysUserFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Instance/JwtInstance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/QueueService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/Service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Service/SysUserService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/app/Task/FooTask.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/bin/hyperf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/annotations.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/aspects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/async_queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/commands.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/crontab.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/databases.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/dependencies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/devtool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/exceptions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/listeners.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/middlewares.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/processes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/redis.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/autoload/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/container.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/config/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/deploy.test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/phpstan.neon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/screenshot/echarts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/screenshot/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/screenshot/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/screenshot/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/screenshot/role.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/screenshot/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/test/Cases/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/test/HttpTestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/test/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/zls-watch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cloud-admin/zls-watch.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/.php_cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/.phpstorm.meta.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/app/Controller/AbstractController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/app/Controller/IndexController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/app/Exception/Handler/AppExceptionHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/app/Listener/DbQueryExecutedListener.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/app/Model/Model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/bin/hyperf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/annotations.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/aspects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/commands.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/databases.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/dependencies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/devtool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/exceptions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/listeners.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/middlewares.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/processes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/redis.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/autoload/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/container.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/config/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/deploy.test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/phpstan.neon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/test/Cases/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/test/HttpTestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gateway-api/test/bootstrap.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,16 +233,12 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/service-components/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Remote PHP 8.0" />
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -30,17 +246,32 @@
     <option name="height" value="733" />
   </component>
   <component name="ProjectId" id="1ZtnCZQgUc67eTnqNz1FlKtrFQM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="Vagrant" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="Vagrant" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -53,10 +284,14 @@
       <updated>1577413594969</updated>
       <workItem from="1577413596191" duration="1025000" />
       <workItem from="1585667132650" duration="966000" />
+      <workItem from="1661184670419" duration="1901000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

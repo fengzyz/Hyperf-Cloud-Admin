@@ -5,11 +5,10 @@ declare(strict_types=1);
  * This file is part of Hyperf.
  *
  * @link     https://www.hyperf.io
- * @document https://doc.hyperf.io
+ * @document https://hyperf.wiki
  * @contact  group@hyperf.io
- * @license  https://github.com/hyperf-cloud/hyperf/blob/master/LICENSE
+ * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-
 namespace App\Listener;
 
 use Hyperf\Database\Events\QueryExecuted;
@@ -21,9 +20,7 @@ use Hyperf\Utils\Str;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 
-/**
- * @Listener
- */
+#[Listener]
 class DbQueryExecutedListener implements ListenerInterface
 {
     /**
@@ -46,7 +43,7 @@ class DbQueryExecutedListener implements ListenerInterface
     /**
      * @param QueryExecuted $event
      */
-    public function process(object $event)
+    public function process(object $event): void
     {
         if ($event instanceof QueryExecuted) {
             $sql = $event->sql;
